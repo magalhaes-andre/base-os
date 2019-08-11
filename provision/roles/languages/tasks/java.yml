@@ -1,0 +1,14 @@
+- name: "Installing Java {{java_version}} JDK"
+  apt:
+    name: "{{jdk_package}}"
+    state: present
+  become: yes 
+
+- name: "Installing Java {{java_version}} JRE"
+  apt:
+    name: "{{jre_package}}"
+    state: present
+  become: yes 
+
+- name: "Setting Up '$JAVA_HOME' Properly"
+  shell: echo JAVA_HOME="{{java_home}}" >> /etc/environment

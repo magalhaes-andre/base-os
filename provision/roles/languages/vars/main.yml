@@ -1,0 +1,5 @@
+# Java Variables
+java_version: 8
+jdk_package: "openjdk-{{java_version}}-jdk"
+jre_package: "openjdk-{{java_version}}-jre"
+java_home: /usr/lib/jvm/java-8-openjdk-amd64

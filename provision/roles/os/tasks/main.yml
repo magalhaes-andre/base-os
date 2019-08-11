@@ -1,0 +1,7 @@
+---
+
+- name: "Running Apt Tasks"
+  include_tasks: apt.yml
+
+- name: "Running Git Tasks"
+  include_tasks: git.yml

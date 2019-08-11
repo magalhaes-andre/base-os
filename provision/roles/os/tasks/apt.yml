@@ -1,0 +1,5 @@
+- name: Updating All 'apt' Packages
+  apt:
+    name: "*"
+    state: latest
+  become: yes
